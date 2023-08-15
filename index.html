@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter"],
+            },
+            colors: {
+              clifford: "#da373d",
+            },
+            spacing: {
+              13: "3,35rem",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- contoh penggunaan css pada tailwind-->
+    <style type="text/tailwindcss">
+      /* * {
+        border: 1px solid red;
+      } */
+
+      .bg {
+        width: 150px;
+        height: 150px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Falco_peregrinus_ernesti.JPG/250px-Falco_peregrinus_ernesti.JPG");
+        background-size: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="text-3xl font-bold text-center m-10">Tailwind CSS</h1>
+
+    <section class="mb-10 mx-5 bg-indigo-300">
+      <h2 class="text-center text-2xl">Spacing</h2>
+      <div class="mx-5 my-5 p-10 w-52 text-center bg-red-400">margin</div>
+      <div class="py-5 px-5 m-5 bg-slate-500 w-24">padding</div>
+      <!-- <div class="bg"></div> -->
+    </section>
+
+    <section class="mb-10 bg-blue-300 mx-5 p-5">
+      <h2 class="text-center text-2xl">sizing</h2>
+      <div class="w-1/2">kotak 1</div>
+      <!-- <div class="w-96 min-h-screen">kotak 2</div> -->
+    </section>
+
+    <section class="p-5 font-inter max-w-4xl mx-auto bg-neutral-300">
+      <h2 class="mb-4 text-4xl font-bold">Belajar Mengenai Typographi</h2>
+      <div class="mb-4 text-gray-500">
+        By
+        <a class="underline text-gray-800 font-bold" href="#">Pradika Nando</a>,
+        30 juli 2023
+      </div>
+      <p class="mb-4">
+        Lorem ipsum, dolor sit amet
+        <a class="underline text-blue-500" href="">consectetur</a> adipisicing
+        elit. Officiis autem non illum iusto maxime voluptatibus praesentium et.
+        Fugiat mollitia quia eligendi animi minima beatae, laudantium officia
+        repellat eveniet, voluptates cum a natus, pariatur ratione sint dolor
+        reiciendis. Suscipit quaerat officia quas, iusto eveniet voluptate
+        repudiandae. Debitis nostrum ex ad iste!
+      </p>
+      <blockquote class="mb-4 font-extralight italic">
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+        veritatis explicabo eius alias repellat earum dolor quos distinctio,
+        nobis minus."
+      </blockquote>
+      <p class="mb-4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+        natus iusto nulla quidem maxime eos illum id nihil unde?
+      </p>
+    </section>
+
+    <div
+      class="overflow-scroll mt-[42px] mx-auto bg-[#bada55] rounded-md max-w-xl h-96"
+      style="
+        background-image: url('https://source.unsplash.com/800x500?computer');
+      "
+    >
+      <p class="text-slate-400">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+        voluptatibus doloribus ex, impedit excepturi rerum voluptatem dolorum?
+        Dolore molestiae explicabo deleniti non quas deserunt aliquid iure.
+        Asperiores exercitationem dolores cum animi optio iure itaque
+        perferendis non vitae fugit enim quo id, quod ut ipsum aliquam dicta
+        nobis consequatur facilis aperiam modi reiciendis ratione placeat! Dicta
+        minus debitis, voluptates animi ratione quis natus fuga! Earum mollitia
+        voluptatibus reprehenderit neque velit, consequatur odit! Obcaecati
+        recusandae ut est provident accusamus placeat beatae repellendus, fugit
+        optio quo ducimus sunt architecto assumenda, amet veritatis porro earum
+        harum adipisci unde eos commodi? Ducimus voluptas commodi aut asperiores
+        placeat dolorum numquam repudiandae, laudantium magnam vitae, architecto
+        labore. Ex maiores sunt iure doloremque omnis asperiores repudiandae ad
+        fugit corporis, nobis qui id consectetur ipsa suscipit sed aut
+        aspernatur similique quibusdam minus? Iusto voluptas cumque itaque quo
+        exercitationem voluptatibus commodi, maxime est quas sit necessitatibus
+        rerum labore ex non in amet, facere repellendus accusamus. Quis enim
+        fugiat at, maiores accusamus, minus deserunt repellat dicta, dolor
+        doloribus modi magnam natus excepturi architecto tempora debitis
+        quisquam aliquam sed itaque nisi odit saepe rem perspiciatis voluptatem?
+        Fugiat saepe doloribus, repellendus laudantium esse voluptates unde
+        voluptate ut placeat reprehenderit fugit, aspernatur nam odit.
+      </p>
+    </div>
+
+    <hr class="my-20" />
+
+    <div
+      class="mt-32 mx-auto max-w-xl h-96 bg-green-300 bg-cover bg-no-repeat bg-center rounded-2xl border-8 opacity-90 shadow-xl shadow-slate-300 border-slate-400 flex"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFwdG9wfHx8fHx8MTY5MTgyNzIxMg&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000');
+      "
+    >
+      <div
+        class="w-[200px] h-[200px] bg-white/40 m-auto rounded-full backdrop-blur-sm"
+      ></div>
+    </div>
+
+    <hr class="my-20" />
+
+    <button
+      class="bg-sky-500 mb-96 mx-auto my-20 px-5 py-2 rounded-full text-white font-semibold font-inter block hover:bg-sky-600 transition duration-300 ease-in-out active:bg-sky-700"
+    >
+      Simpan
+    </button>
+  </body>
+</html>
